@@ -1,5 +1,7 @@
 # Text Editor
 
+**Deployed at:** https://danielstefan11.github.io/text-editor-vanilla-js/
+
 ## Functionalities
 
 - count total characters in a text;
