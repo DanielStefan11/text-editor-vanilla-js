@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Character Counter</title>
+  </head>
+  <body>
+    <h1>Text Editor</h1>
+
+    <div id="container">
+      <div id="textareas-container">
+        <div id="text-for-edit">
+          <textarea
+            name="text"
+            id="content"
+            class="main-textareas"
+            cols="30"
+            rows="10"
+            placeholder="Insert you text here for counting characters"
+          ></textarea>
+        </div>
+        <div id="edit-characters">
+          <textarea
+            name=""
+            id="new-text"
+            class="main-textareas"
+            cols="30"
+            rows="10"
+            placeholder="Change Text To UPPER CASE Or lowercase (edited text will appear here)"
+          ></textarea>
+          <div id="edit-btns-container">
+            <button id="upper-case" class="function-btns">Upper Case</button>
+            <button id="lower-case" class="function-btns">Lower Case</button>
+            <div id="copy-container">
+              <button id="copy-btn" class="function-btns">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="other-functions-container">
+        <div id="char-counter-container-1" class="functions">
+          <h3>Count total characters</h3>
+          <p class="values"><span id="num-of-characters">0</span></p>
+          <div>
+            <button id="counter-1" class="function-btns">
+              Count Characters
+            </button>
+          </div>
+        </div>
+
+        <div id="char-counter-container-2" class="functions">
+          <h3>Count characters without spaces</h3>
+          <p class="values">
+            <span id="char-no-spaces">0</span>
+          </p>
+          <div>
+            <button id="counter-2" class="function-btns">
+              Count Characters
+            </button>
+          </div>
+        </div>
+
+        <div id="word-counter-container" class="functions">
+          <h3>Count Words</h3>
+          <p class="values"><span id="num-of-words">0</span></p>
+          <div>
+            <button id="count-words-btn" class="function-btns">
+              Count Words
+            </button>
+          </div>
+        </div>
+
+        <div id="search-smth" class="functions">
+          <h3>Find a character or a word (case sensitive)</h3>
+          <textarea
+            name="search-item"
+            id="item-for-search"
+            cols="30"
+            rows="1"
+            placeholder="Insert only ONE character or word"
+          ></textarea>
+          <p id="confirmation-p">Confirmation: <span id="confirmation"></span></p>
+          <div>
+            <button id="search-btn" class="function-btns">Search</button>
+          </div>
+        </div>
+      </div>
+      <div id="refresh-btn-container">
+        <button id="clear-content">Refresh</button>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
